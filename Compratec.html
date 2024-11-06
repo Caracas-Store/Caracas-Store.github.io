@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@652&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@652&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra - Etec</title>
+    <link rel="stylesheet" href="compratec.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+       
+        <a href="Index.html" class="etec"> 
+            <div class="logo">
+                <h1>Etec</h1>
+            </div></a> 
+    
+            <input type="text" name="text" class="input" placeholder="Buscar">
+
+      
+    </header>
+
+    <label class="hamburger" for="menu-toggle">
+        <input type="checkbox" id="menu-toggle">
+        <svg viewBox="0 0 32 32">
+            <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+            <path class="line" d="M7 16 27 16"></path>
+        </svg>
+    </label>
+
+      <div class="sidebar">
+        <ul class="menu-list">
+        <li class="text-hover"><a href="#"> <details> <summary> Categorias </summary> </details> </a></li> 
+        <li class="text-hover"><a href="Index.html">Início</a></li>
+        <li class="text-hover"><a href="Carrinho.html">Carrinho</a></li>
+        <li class="text-hover"><a href="Páginas/Sobre.html">Sobre nós</a></li>
+        <li class="text-hover"><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+
+    <main class="checkout-container">
+        <h1 class="title">FINALIZAR COMPRA</h1>
+        <p class="subtitle">(1 produto) R$45,00</p>
+
+        <section class="delivery-options">
+            <h2>Escolha a forma de entrega</h2>
+            <div class="delivery-choice">
+                <label class="delivery">
+
+                    <input class="home custom-radio" type="radio" name="delivery" value="home" checked>
+                    <span>🚚 Receber em casa</span>
+                </label>
+                
+                <label class="retirar">
+                    <input type="radio" name="delivery" value="pickup">
+                    <span>📍 Retirar em uma ETEC</span>
+                </label>
+
+            </div>
+            <form class="address-form">
+                
+                <div class="form-control">
+                  <input class="inputs inputs-alt" placeholder="Nome completo" required="" type="text">
+                  <span class="inputs-border inputs-border-alt"></span>
+                </div>
+                
+                <br>
+
+                <div class="form-control">
+                    <input class="inputs inputs-alt" placeholder="Endereço" required="" type="text">
+                    <span class="inputs-border inputs-border-alt"></span>
+                  </div>
+
+                <br>
+
+                <div class="zip-city">
+                    
+                    <div class="form-control">
+                        <input class="inputs inputs-alt cep" placeholder="CEP*" required="" type="text" id="cep" maxlength="10">
+                        <span class="inputs-border inputs-border-alt"></span>
+                      </div>
+
+                      <div class="form-control">
+                        <input class="inputs inputs-alt numero" placeholder="Número" required="" type="number">
+                        <span class="inputs-border inputs-border-alt"></span>
+                      </div>
+
+                </div>
+
+                <br>
+
+                <div class="neighborhood-city">
+
+                    <div class="form-control">
+                        <input class="inputs inputs-alt bairro" placeholder="Bairro" required="" type="text">
+                        <span class="inputs-border inputs-border-alt"></span>
+                      </div>
+                      
+                      <br>
+      
+                      <div class="form-control">
+                          <input class="inputs inputs-alt cidade" placeholder="Cidade" required="" type="text">
+                          <span class="inputs-border inputs-border-alt"></span>
+                        </div>
+                </div>
+                <br>
+
+                <label class="checkbox-btn"> Salvar endereços e informações de contato para futuras compras.
+                    <label for="checkbox"></label>
+                    <input id="checkbox" type="checkbox">
+                    <span class="checkmark"></span>
+                </label>            </form>
+        </section>
+
+        <aside class="order-summary">
+            <h2>SEU PEDIDO</h2>
+            <a href="#" class="edit-link">EDITAR</a>
+            <ul>
+                <li>1 produto <span>R$45,00</span></li>
+                <li>Entrega <span>R$10,00</span></li>
+                <li><strong>Total</strong> <strong>R$55,00</strong></li>
+            </ul>
+
+            <hr>
+
+            <div class="product-info">
+                <img src="IMG/CAMISA TECSESP.png" alt="Camisa Etec Tecses">
+                <p class="info">Camisa Etec Tecsesp<br>R$45,00<br>Tamanho: G / Quantidade: 1<br>Cor: Preto, Dourado</p>
+            </div>
+           <a href="loader.html"> <button class="complete-order">FINALIZAR O PEDIDO</button></a>
+        </aside>
+    </main>
+
+    <script src="Scripts/compra.js"></script>
+    <script src="Scripts/cep.js"></script>
+    <script src="Scripts/menu.js"></script>
+    <script src="Scripts/transition.js"></script>
+
+</body>
+</html>

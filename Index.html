@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Uniformes Etec</title>
+
+        <!-- Fontes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dosis&family=Mitr&family=Montserrat:ital@0;1&family=Pathway+Gothic+One&family=Quattrocento:wght@700&family=Ramabhadra&family=Rubik:wght@331&display=swap" rel="stylesheet">
+        
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        
+        <!-- Estilos do site -->
+        <link rel="stylesheet" href="loja inter.css">
+    </head>
+
+    <body>
+
+        <header>
+            <a href="Index.html" class="etec">
+                <div class="logo">
+                    <h1>Etec</h1>
+                </div>
+            </a>
+            <input type="text" name="text" class="input" placeholder="Buscar">
+        </header>
+
+        <main>
+            <label class="hamburger" for="menu-toggle">
+                <input type="checkbox" id="menu-toggle">
+                <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+            <div class="sidebar">
+                <ul class="menu-list">
+                    <li class="text-hover"><a href="#"> <details> <summary> Categorias </summary> </details> </a></li> 
+                    <li class="text-hover"><a href="Index.html">Início</a></li>
+                    <li class="text-hover"><a href="Páginas/Carrinho.html">Carrinho</a></li>
+                    <li class="text-hover"><a href="Páginas/Sobre.html">Sobre nós</a></li>
+                    <li class="text-hover"><a href="Páginas/Contato.html">Contato</a></li>
+                    </ul>
+            </div>
+            <section class="hero">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="background-image: url('IMG/BANNER.jpeg');">
+                            <div class="carousel-text txt-tec">CAMISA TECSESP</div>
+                        </div>
+                        <div class="carousel-item P-M" style="background-image: url('IMG/Dobrada-poloP.jpg');">
+                            <div class="carousel-text txt-preta">CAMISA PRETA POLO</div>
+                        </div>
+                        <div class="carousel-item moletom" style="background-image: url('IMG/Dobrada-moletom.JPG');">
+                            <div class="carousel-text txt-moletom">MOLETOM PRETO</div>
+                        </div>
+                        <div class="carousel-item moletom brancas" style="background-image: url('IMG/dobradas-all.jpg');">
+                            <div class="carousel-text txt-brancas">CAMISAS BRANCAS</div>
+                        </div>
+                        <div class="carousel-item moletom pretas" style="background-image: url('IMG/dobradas-all.jpg');">
+                            <div class="carousel-text txt-moletom">CAMISAS PRETAS</div>
+                        </div>
+                    </div>
+                    <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>   
+                </div>
+            </section>
+
+            <h2 class="dtqtxt">
+
+            <!--Divisão de uma section para outra-->
+
+            <br>Destaques</h2>
+
+            <section class="dtq">
+                <div class="products">
+                    <div class="produto">
+                        <a href="Peças/Camisa-tecsesp.html"> <div class="image-placeholder1"></div></a>
+                        <p>CAMISA TECSESP - ETEC CARAPICUÍBA 2024</p>
+                        <p class="preço">R$ 45,00</p>
+                    </div>
+                    <div class="produto">
+                        <a href="Peças/Camisa-preta.html">  <div class="image-placeholder2"></div></a>
+                        <p>CAMISETA ETEC CARAPICUÍBA - PRETA</p>
+                        <p class="preço">R$ 50,00</p>
+                    </div>
+                    <div class="produto">
+                        <a href="Peças/Camisa-branca.html"> <div class="image-placeholder3"></div></a>   
+                        <p>CAMISETA ETEC CARAPICUÍBA - BRANCA</p>
+                        <p class="preço">R$ 50,00</p>
+                    </div>
+                    <div class="produto">
+                        <a href="Peças/Camisa-tecsesp.html"> <div class="image-placeholder4"></div></a>
+                        <p>CAMISA TECSESP - ETEC CARAPICUÍBA 2024</p>
+                        <p class="preço">R$ 45,00</p>
+                    </div>
+                    <div class="produto">
+                        <a href="Peças/Camisa-preta.html">  <div class="image-placeholder5"></div></a>
+                        <p>CAMISETA ETEC CARAPICUÍBA - PRETA</p>
+                        <p class="preço">R$ 50,00</p>
+                    </div>
+                    <div class="produto">
+                        <a href="Peças/Camisa-branca.html"> <div class="image-placeholder6"></div></a>   
+                        <p>CAMISETA ETEC CARAPICUÍBA - BRANCA</p>
+                        <p class="preço">R$ 50,00</p>
+                    </div>
+                </div>
+            </section>
+            <script src="Scripts/menu.js"></script>
+            <script src="Scripts/transition.js"></script>
+            <script src="Scripts/carrossel.js"></script>
+        </main>
+    </body>
+
+    <div class="rdp">
+
+        <footer>
+
+        </footer>
+        
+    </div>
+</html>

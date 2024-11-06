@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@652&display=swap" rel="stylesheet"> 
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@652&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Camisa-preta.css">
+        <title>Camisa Preta</title>
+    </head>
+    <body>
+
+        <!-- Modal -->
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+
+                <!-- Conteúdo do pop-up -->
+                
+                <div class="container">
+                    <div class="image-section">
+                        <img src="/IMG/CAMISA PRETA COM VERMELHA.png" alt="Camisa Etec Carapicuíba" width="30%" class="camiseta">
+                    </div>
+                    <div class="table-section">
+                        <h2 class="texto1">Compare as medidas com esta tabela.</h2>
+                        <table>
+                            <tr class="corpo">
+                                <th>TAMANHO</th>
+                                <th>TÓRAX</th>
+                                <th>CINTURA</th>
+                                <th>QUADRIL</th>
+                            </tr>
+                            <tr class="tamanhos">
+                                <td>PP</td>
+                                <td>86</td>
+                                <td>72</td>
+                                <td>90</td>
+                            </tr>
+                            <tr class="tamanhos">
+                                <td>P</td>
+                                <td>94</td>
+                                <td>80</td>
+                                <td>98</td>
+                            </tr>
+                            <tr class="tamanhos">
+                                <td>M</td>
+                                <td>100</td>
+                                <td>86</td>
+                                <td>104</td>
+                            </tr>
+                            <tr class="tamanhos">
+                                <td>G</td>
+                                <td>108</td>
+                                <td>94</td>
+                                <td>112</td>
+                            </tr>
+                            <tr class="tamanhos">
+                                <td>GG</td>
+                                <td>114</td>
+                                <td>100</td>
+                                <td>118</td>
+                            </tr>
+                        </table>
+                        <p>Medidas: cm</p>
+                        <span class="close">
+                            <button class="animated-button">
+                        </span>
+                        <span>Voltar</span>
+                        <span></span>
+                        </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <a href="/Index.html" class="etec">
+                <div class="logo">
+                    <h1>Etec</h1>
+                </div>
+            </a> 
+            <input type="text" name="text" class="input" placeholder="Buscar">
+        </header>
+        
+        <label class="hamburger" for="menu-toggle">
+            <input type="checkbox" id="menu-toggle">
+            <svg viewBox="0 0 32 32">
+                <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                <path class="line" d="M7 16 27 16"></path>
+            </svg>
+        </label>
+        <div class="sidebar">
+            <ul class="menu-list">
+                <li class="text-hover"><a href="#"> <details> <summary> Categorias </summary> </details> </a></li> 
+                <li class="text-hover"><a href="/Index.html">Início</a></li>
+                <li class="text-hover"><a href="/Páginas/Carrinho.html">Carrinho</a></li>
+                <li class="text-hover"><a href="/Páginas/Sobre.html">Sobre nós</a></li>
+                <li class="text-hover"><a href="/Páginas/Contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <section class="tecsesp">
+            <div class="cms"></div>
+            <div class="txt1">CAMISA PRETA - ETEC DE CARAPICUIBA  | 2024 
+                <br>
+                    R$ 50,00
+                <br>
+                <span class="juros">2X R$ 25,00 Sem juros </span>
+                <div class="cor"></div>
+                <hr>
+                <div class="txt2"> Tamanho:</div>
+                <div class="tamanho">
+                    <div class="PP" onclick="selectSize(this)">PP</div>
+                    <div class="P" onclick="selectSize(this)">P</div>
+                    <div class="M" onclick="selectSize(this)">M</div>
+                    <div class="G" onclick="selectSize(this)">G</div>
+                    <div class="GG" onclick="selectSize(this)">GG</div>
+                </div>
+                <div class="arcticons--tapemeasure">
+                </div>
+                </a>
+                <a href="/medida2.html" id="tabela-medida">
+                    <div class="link">Tabela de Medidas</div>
+                </a>
+                <a href="/Comprapv.html"> <div data-tooltip="+ Carrinho" class="button">
+                <div class="button-wrapper">
+                    <div class="text">Comprar</div>
+                        <span class="icon">
+                            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
+                            </svg></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="/Scripts/menu.js"></script>
+        <script src="/Scripts/transition.js"></script>
+        <script src="/Scripts/pop-up.js"></script>
+        <script src="/Scripts/selected.js"></script>
+    </body>
+</html>

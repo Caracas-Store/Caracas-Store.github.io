@@ -1,0 +1,164 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom,#7c0000, rgb(196, 0, 0), var(--cor-branco)fff 15%);
+}
+
+.container {
+    display: flex;
+    background-color: var(--cor-branco);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 10000px;
+    max-width: 87vw;
+    height: 90vh;
+    padding: 20px;
+    position: relative;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3))
+    drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2))
+    drop-shadow(0 10px 25px rgba(0, 0, 0, 0.1));
+    position: absolute;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.table-section {
+    flex: 1;
+    padding: 20px;
+    top: 15vh;
+    position: absolute;
+    left: 35vw;
+    width: 50vw;
+}
+
+.table-section h2 {
+    font-size: 1.2em;
+    color: var(--cor-cinzaescuro);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.table-section th,
+.table-section td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.table-section th {
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.table-section p {
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tamanhos{
+    color: grey;
+}
+
+.corpo{
+    color: grey;
+    font-size: 13px;
+}
+
+p{
+    position: absolute;
+    top: 60vh;
+    font-size: 25px;
+    left: 1.6vw;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Mantém a cor do texto */
+}
+
+/* From Uiverse.io by gharsh11032000 */ 
+.animated-button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    background-color:inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: #545454;
+    box-shadow: 0 0 0 2px var(--cor-branco)fff20;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    position: absolute;
+    left: 35vw;
+    border: solid 1px grey;
+    top: 58vh;
+    width: 150px;
+  }
+  
+  .animated-button span:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #2196F3;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .animated-button span:first-child {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .animated-button:hover {
+    box-shadow: 0 0 0 5px #2195f360;
+    color: var(--cor-branco)fff;
+    border: none;
+  }
+  
+  .animated-button:active {
+    scale: 0.95;
+  }
+  
+  .animated-button:hover span:last-child {
+    width: 150px;
+    height: 150px;
+    opacity: 1;
+  }
